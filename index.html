@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Calculator using Javascipt</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,20 +11,21 @@
         <h1>SIMPLE CALCULATOR</h1>
         <div class="valores">
             <label for="value1">
-                <input class="valores-input" type="number" id="value1" name="value">
+                <input class="valores-input" type="number" id="value1" name="value1">
             </label>
             <label for="value2">
-                <input class="valores-input" type="number" id="value2" name="value">
+                <input class="valores-input" type="number" id="value2" name="value2">
             </label>
         </div>
         <div class="operadores">
             <div class="operadores-radio">
-                <label for="soma"><input type="radio" id="soma" name="operation" value="sum">+</label>
-                <label for="menos"><input type="radio" id="menos" name="operation" value="min">-</label>
-                <label for="multi"><input type="radio" id="multi" name="operation" value="mult">*</label>
-                <label for="div"><input type="radio" id="div" name="operation" value="div">/</label>
+                <label for="box1"><input checked type="radio" id="box1" name="operation" value="add">+</label>
+                <label for="box2"><input type="radio" id="box2" name="operation" value="subtract">-</label>
+                <label for="box3"><input type="radio" id="box3" name="operation" value="multiply">*</label>
+                <label for="box4"><input type="radio" id="box4" name="operation" value="divide">/</label>
             </div>
-            <button type="button">CALCULATE</button>
+            <button onclick="outcome()" type="button">CALCULATE</button>
+            <h1 id="resultArea"></h1>
         </div>
     </div>
 
