@@ -7,7 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>SIMPLE CALCULATOR</h1>
+        <div class="valores">
+            <label for="value1">
+                <input class="valores-input" type="number" id="value1" name="value">
+            </label>
+            <label for="value2">
+                <input class="valores-input" type="number" id="value2" name="value">
+            </label>
+        </div>
+        <div class="operadores">
+            <div class="operadores-radio">
+                <label for="soma"><input type="radio" id="soma" name="operation" value="sum">+</label>
+                <label for="menos"><input type="radio" id="menos" name="operation" value="min">-</label>
+                <label for="multi"><input type="radio" id="multi" name="operation" value="mult">*</label>
+                <label for="div"><input type="radio" id="div" name="operation" value="div">/</label>
+            </div>
+            <button type="button">CALCULATE</button>
+        </div>
+    </div>
+
     <script src="index.js"></script>
 </body>
 </html>
